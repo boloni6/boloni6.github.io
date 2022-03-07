@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boloni智能数据可视平台</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+<div class="data">
+    <div class="data-content">
+        <div class="con-left fl">
+            <div class="left-top">
+                <div>数据更新时间：<span id="update-time"></span></div>
+                <div>今日激活设备：<span id="today_active">台</span></div>
+                <div>今日APP注册人数：<span id="today_app_register">人</span></div>
+            </div>
+            <div class="left-center chart-bg">
+                <div class="title">近30日激活设备</div>
+                <div id="echarts_1" class="charts"></div>
+            </div>
+            <div class="left-bottom chart-bg2">
+                <div class="title">累计激活设备</div>
+                <div id="echarts_2" class="charts"></div>
+            </div>
+        </div>
+        <div class="con-center fl">
+            <!--<div class="map-num">
+                <p>实时行驶车辆(辆)</p>
+                <div class="num">
+                    <span>1</span>
+                    <span>,</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>,</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                </div>
+            </div>-->
+            <div class="total-num">
+                <div class="total-num-left">
+                    <div style="width:100%;height:0.78rem;position: absolute;top:50%;margin-top:-0.39rem;">
+                        <p class="title">累计激活设备</p>
+                        <p id="totalActive" class="num"><span style="font-size: 0.4rem;color:#33D1EC;"></span> 台</p>
+                    </div>
+                </div>
+                <div class="total-num-right">
+                    <div style="width:100%;height:0.66rem;position: absolute;top:50%;margin-top:-0.33rem;">
+                        <p class="title">累计APP注册用户</p>
+                        <p id="totalRegister" class="num"><span style="font-size: 0.4rem;color:#33D1EC;"></span> 人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-tab">
+                <div class="map-tab-nav active">激活设备</div>
+                <div class="map-tab-nav">活跃设备</div>
+            </div>
+            <div id="map-tab-title" style="text-align: center;color:#fff;font-size: 0.26rem;font-weight: bold;position: absolute;top:40%;width: 100%;">近30日激活设备</div>
+            <div class="cen-top" id="map"></div>
+            <div class="cen-bottom">
+                <div class="left-sort">
+                    <div class="title">城市排名</div>
+                    <div id="mapSort" class="scroll-box">
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="right-sort">
+                    <div class="title">设备排名</div>
+                    <div id="deviceSort" class="scroll-box">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="con-right fr">
+            <div class="right-top">
+                <div style="height:50px;"><img src="img/homelogo.png" style="height:110px;vertical-align: top;"></div>
+                <select id="selectDevice" class="select-device">
+                    <option>全部设备</option>
+                </select>
+            </div>
+            <div class="right-center chart-bg">
+                <div class="title">近30日APP注册数</div>
+                <div id="echarts_3" class="charts"></div>
+            </div>
+            <div class="right-bottom chart-bg2">
+                <div class="title">累计APP注册人数</div>
+                <div id="echarts_4" class="charts"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/mapJson.js"></script>
+<script src="js/sha256.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/china.js"></script>
+<script src="js/echarts.js"></script>
+<!--本地数据 累计折线数据和本地数据-->
+<script src="js/json.js"></script>
+<script src="js/localData.js"></script>
+</html>

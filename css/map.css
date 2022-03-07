@@ -1,0 +1,277 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,24,106,1) url('../img/homebg.png') center;
+    background-size: cover;
+}
+.data{
+    width: 100%;
+    height: 100%;
+    min-width: 1366px;
+    overflow: hidden;
+}
+
+.data>.data-content{
+    width: 100%;
+    height:calc(100% - 0.2rem);
+    padding: 0.2rem 0.2rem 0;
+    box-sizing: border-box;
+}
+.data>.data-content>.con-left{
+    width: 23.4375%;
+    height: 100%;
+}
+.data>.data-content>.con-left>.left-top{
+    color:#fff;
+    font-size: 0.24rem;
+    width: 100%;
+    height:20%;
+    position: relative;
+}
+.data>.data-content>.con-left>.left-top>div{
+    margin-bottom: 18px;
+}
+.data>.data-content>.con-left>.left-top div>span{
+    float: right;
+}
+
+.data>.data-content>.con-left>.left-center{
+    width: 100%;
+    height: calc(42% - 40px);
+    box-sizing: border-box;
+    position: relative;
+    margin:20px 0;
+}
+
+.data>.data-content>.con-left>.left-bottom{
+    width: 100%;
+    height: 38%;
+    box-sizing: border-box;
+    position: relative;
+}
+.data>.data-content>.con-center{
+    width: 53.125%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.data>.data-content>.con-center>.map-num{
+    width: 500px;
+    height: 120px;
+    position: absolute;
+    top: 15px;
+    left:50px;
+    z-index: 1000;
+}
+.data>.data-content>.con-center>.map-num>p{
+    font-size: 18px;
+    font-weight: 600;
+    color:#fff;
+}
+.data>.data-content>.con-center>.map-num span{
+    display: inline-block;
+    width: 45px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    background-color: #0089ff;
+    color:#fff;
+    font-size: 68px;
+    font-weight: 600;
+    font-family: "LcdD";
+    margin-top: 15px;
+}
+.data>.data-content>.con-center>.map-num span:nth-child(2),
+.data>.data-content>.con-center>.map-num span:nth-child(6){
+    background-color: transparent;
+    width: 30px;
+}
+
+.data>.data-content>.con-center>.total-num{
+    width: 4.6rem;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+.data>.data-content>.con-center>.total-num>.total-num-left,.data>.data-content>.con-center>.total-num>.total-num-right{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 2.1rem;
+    height: 2.1rem;
+    border:0.05rem solid rgba(20,147,212,0.5);
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.data>.data-content>.con-center>.total-num>.total-num-left{
+    margin-right: 0.2rem;
+}
+.data>.data-content>.con-center>.total-num .title{
+    line-height: 0.35rem;
+    color: #fff ;
+    font-size: 0.24rem;
+    padding-top: 0;
+}
+.data>.data-content>.con-center>.total-num .num{
+    color:#fff;
+    font-size: 0.28rem;
+}
+.data>.data-content>.con-center>.total-num .num span{
+    font-family: Arial;
+    font-size: 0.52rem !important;
+    /*background-image: -webkit-gradient(*/
+      /*linear,*/
+      /*0 0,*/
+      /*0 bottom,*/
+      /*from(rgb(25, 247, 228)),*/
+      /*to(#ffffff)*/
+    /*);*/
+    background-image: linear-gradient(180deg,rgba(255,255,255,1),rgba(25, 247, 228,1));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-weight: 600;
+    text-shadow: 3px 3px 4px rgba(25, 247, 228,0.4);
+}
+
+.data>.data-content>.con-center>.map-tab{
+    width: 3.76rem;
+    margin: 10px auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+.data>.data-content>.con-center>.map-tab>.map-tab-nav{
+    display: inline-block;
+    width: 1.88rem;
+    float: left;
+    color:#ffffff;
+    line-height: 0.57rem;
+    text-align: center;
+    font-size: 0.22rem;
+    background:#122A54;
+}
+.data>.data-content>.con-center>.map-tab>.map-tab-nav.active{
+    background:#1492D4;
+}
+
+.data>.data-content>.con-center>.cen-top{
+    position: absolute;
+    width: 100%;
+    height:78%;
+    bottom:-0.8rem;
+}
+
+.data>.data-content>.con-center>.cen-bottom>.left-sort,.data>.data-content>.con-center>.cen-bottom>.right-sort{
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    z-index: 2;
+    display: inline-block;
+    width: 1.9rem;
+    height: 22%;
+    border:1px solid #26E1F7;
+    color:#fff;
+    padding: 0.1rem;
+}
+.data>.data-content>.con-center>.cen-bottom>.left-sort {
+    width: 1.3rem;
+}
+.data>.data-content>.con-center>.cen-bottom>.right-sort{
+    position: absolute;
+    left: auto;
+    right: 30px;
+    z-index: 2;
+}
+.data>.data-content>.con-center>.cen-bottom .title{
+    text-align: center;
+    font-size: 0.18rem;
+    font-weight: 500;
+    line-height: inherit;
+    height: auto;
+    padding-top:0;
+}
+.data>.data-content>.con-center>.cen-bottom .scroll-box{
+    margin-top: 0.12rem;
+    height: 81%;
+    overflow: hidden;
+}
+.data>.data-content>.con-center>.cen-bottom .scroll-box li{
+    height: 0.34rem;
+    font-size: 0.13rem;
+    line-height: 0.17rem;
+    word-break: break-all;
+}
+
+.data>.data-content>.con-right{
+    width: 23.4375%;
+    height: 100%;
+}
+.data>.data-content>.con-right>.right-top{
+    width: 100%;
+    height: 20%;
+    text-align: right;
+}
+.data>.data-content>.con-right>.right-top> .select-device{
+    position: relative;
+    display: inline-block;
+    border:1px solid #2C6BCA;
+    border-radius: 2px;
+    width: 164px;
+    height:35px;
+    margin:20px auto 0;
+    text-align: left;
+    color:#2297C6;
+    font-size: 14px;
+    background:transparent;
+    padding: 0 10px 0;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url('../img/arrow-down.png') 140px center no-repeat;
+    background-size: 16px 12px;
+    box-shadow: unset !important;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select:focus {
+    outline: 0;
+}
+
+.data>.data-content>.con-right>.right-center{
+    width: 100%;
+    height:calc(42% - 40px);
+    margin: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.data>.data-content>.con-right>.right-bottom{
+    width: 100%;
+    height:38%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.data>.data-content .title{
+    padding-top: 10px;
+    font-size: 0.22rem;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+.data>.data-content .charts{
+    width: 100%;
+    height:calc(100% - 35px);
+}
+
+.data>.data-content .chart-bg{
+    background: url("../img/echartbg.png") center no-repeat;
+    background-size: 100% 100%;
+}
+.data>.data-content .chart-bg2{
+    background: url("../img/echartbg2.png") center no-repeat;
+    background-size: 100% 100%;
+}
