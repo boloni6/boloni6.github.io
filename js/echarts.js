@@ -8,15 +8,18 @@ const host = 'https://openapi.tuyacn.com';
 //设备数据
 const deviceList = [
   {name: 'S1351.CCT', pid: 'jjxettotauu5vvne'},
-  {name: 'S1300', pid: 'fqwypt1cq8avb6bt'},
-  {name: 'S1300G彩光接收器', pid: '8yscyykn62zzngbt'},
+  {name: 'S1361.CCT', pid: 'bph3zq8zthmeiub8'},
+  {name: 'S1361.DIM', pid: 'kjj8gac0ytkt0rca'},
+  {name: 'S1361.CCT-Zigbee', pid: 'gm5cptio'},
+  // {name: 'S1300', pid: 'fqwypt1cq8avb6bt'},
+  // {name: 'S1300G彩光接收器', pid: '8yscyykn62zzngbt'},
   {name: '湛卢RGB彩灯控制器', pid: 'whlf2kqh6afth4dd'},
-  {name: '承影双色灯光控制器', pid: 'k1mvfu2oaaqxicqi'},
-  {name: 'S1300V', pid: 'leq2ucmamlekirdk'},
-  {name: '单色灯S1300U', pid: '1udophwkrulnbsbz'},
-  {name: '触点控制模式S2100-B2', pid: '1im07ez6bbqv8otb'},
+  // {name: '承影双色灯光控制器', pid: 'k1mvfu2oaaqxicqi'},
+  // {name: 'S1300V', pid: 'leq2ucmamlekirdk'},
+  // {name: '单色灯S1300U', pid: '1udophwkrulnbsbz'},
+  // {name: '触点控制模式S2100-B2', pid: '1im07ez6bbqv8otb'},
   {name: '智能杀菌干燥机', pid: '9z3dcwehpianqsgr'},
-  {name: '未来窗', pid: '4mrvdpcwzkrvo4t4'},
+  // {name: '未来窗', pid: '4mrvdpcwzkrvo4t4'},
 ];
 const scheam = 'bolonismartcare';
 const _timer = 1000*60*5;//定时刷新间隔5分钟
