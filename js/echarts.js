@@ -18,7 +18,7 @@ const deviceList = [
   // {name: 'S1300V', pid: 'leq2ucmamlekirdk'},
   // {name: '单色灯S1300U', pid: '1udophwkrulnbsbz'},
   // {name: '触点控制模式S2100-B2', pid: '1im07ez6bbqv8otb'},
-  {name: '智能杀菌干燥机', pid: '9z3dcwehpianqsgr'},
+  //{name: '智能杀菌干燥机', pid: '9z3dcwehpianqsgr'},
   // {name: '未来窗', pid: '4mrvdpcwzkrvo4t4'},
 ];
 const scheam = 'bolonismartcare';
